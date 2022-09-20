@@ -53,6 +53,7 @@ void initSoftwareSerial() {
   sensor2.begin(MODBUS_DEVICE_ID2, swSerial2);
   sensor2.preTransmission(preTransmission);
   sensor2.postTransmission(postTransmission);
+  delay(10);
 }
 
 float steamFlow(uint8_t result) {
